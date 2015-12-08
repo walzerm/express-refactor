@@ -1,0 +1,14 @@
+.catavar {
+  height: 250px;
+  margin: auto;
+}
+
+.section {
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 60%;
+  border:10px solid #fff111;
+  background-color: #f15f01;
+  padding: 10px;
+}
