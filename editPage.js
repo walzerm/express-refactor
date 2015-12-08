@@ -12,10 +12,8 @@ window.onload = function(){
   var submit = document.querySelector('form > p > input[type=submit]');
   var reset = document.querySelector('form > p > button');
 
+  // update a story
   submit.addEventListener('click', function(e){
-
-      e.preventDefault();
-
       window.localStorage.clear();
 
       storyData = {
@@ -25,16 +23,14 @@ window.onload = function(){
       }
 
       window.localStorage.storyData = JSON.stringify(storyData);
-
-      console.log(window.localStorage);
-
-      window.location.pathname = '/'
   })
 
+  // reseting a story
   reset.addEventListener('click', function(e) {
     textInputs[0].value = "This is the song that never ends"
     textInputs[1].value = "Yea some people started it not knowing what it was"
     textInputs[2].value = "and they'll continue singing it because"
+    submit.click();
   })
 
 }
