@@ -10,7 +10,7 @@ window.onload = function(){
   textInputs[2].value = currentData.verse3 || "";
 
   var submit = document.querySelector('form > p > input[type=submit]');
-  var reset = document.querySelector('form > p > button');
+  var reset = document.getElementById("reset");
 
   // update a story
   submit.addEventListener('click', function(e){
@@ -30,7 +30,8 @@ window.onload = function(){
     textInputs[0].value = "This is the song that never ends"
     textInputs[1].value = "Yea some people started it not knowing what it was"
     textInputs[2].value = "and they'll continue singing it because"
-    submit.click();
+    console.log("i did it");
+    //submit.click();
   })
 
 }
